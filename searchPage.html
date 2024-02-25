@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchPage</title>
+    <link rel="stylesheet" href="./assets/css/searchPageStyle.css">
+    <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <div class="logo">
+            <a href="./index.html"><img class="logo__img" src="./assets/image/logoImage/logo.png" alt=""></a>
+        </div>
+        <div class="search-bar">
+            <div class="search-bar--normal input mrg-top-16">
+                <div class="search-bar--normal__inline">
+                    <input type="text" class="search-bar__input" placeholder="Nhập Số đơn hoặc Nhãn hiệu (kidd*, kidd?, ...)">
+                    <a href="./searchPage.html" class="ti-search pointer search-btn"></a>
+                </div>
+            </div>
+            <div class="search-bar--advanced mrg-top-16">
+                <div class="search-bar-advanced__btn">
+                    <a href="#" class="advanced-search__btn">Tìm kiếm nâng cao <i class="ti-angle-down"></i></a>
+                    <a href="#" class="save-list__btn">Danh sách đã lưu</a>
+                </div>
+                <!-- Advanced Search Bar: Begin -->
+                <div class="advsearch-container grid-style grid-col-half close font-size-15">
+                    <div class="grid-style box1 grid-col-half">
+                        <div class="input id-company">
+                            <input type="text" placeholder="Số bằng" class="boder-none">
+                        </div>
+                        <div class="input product-owner">
+                            <input type="text" placeholder="Chủ đơn" class="boder-none">
+                        </div>
+                        <div class="input product-group flex-style">
+                            <select name="product-filer" id="product-filer">
+                                <option value="Bất kỳ">Bất kỳ</option>
+                                <option value="Tất cả">Tất cả</option>
+                            </select>
+                            <input type="text" placeholder="Nhóm 1, 2, 3..." class="boder-none product-group-input">
+                        </div>
+                    </div>
+                    <div class="box2 input product-situation grid-style grid-col-half">
+                        <div style="grid-row: span 2; font-weight: bold; white-space: nowrap;">
+                            <label>Trạng thái</label>
+                        </div>
+                        <div class="center-row flex-align-left">
+                            <input type="checkbox" id="Cap-bang" class="pointer">
+                            <label for="Cap-bang" class="mrg-left-8 pointer">Cấp bằng</label>
+                        </div>
+                        <div class="center-row flex-align-left">
+                            <input type="checkbox" id="Dang-giai-quyet" class="pointer">
+                            <label for="Dang-giai-quyet" class="mrg-left-8 pointer">Đang giải quyết</label>
+                        </div>
+                        <div class="center-row flex-align-left">
+                            <input type="checkbox" id="Tu-choi" class="pointer">
+                            <label for="Tu-choi" class="mrg-left-8 pointer">Từ chối</label>
+                        </div>
+                        <div class="center-row flex-align-left">
+                            <input type="checkbox" id="Rut-don" class="pointer">
+                            <label for="Rut-don" class="mrg-left-8 pointer">Rút đơn</label>
+                        </div>
+                    </div>
+                    <div class="box3 input product-name flex-style">
+                        <input type="text" placeholder="Sản phẩm (cà ph*, cà ph?, ...)" class="boder-none">
+                    </div>
+                    <div class="box4 input product-classify flex-style">
+                        <select name="" id="">
+                            <option value="Bất kỳ">Bất kỳ</option>
+                            <option value="Tất cả">Tất cả</option>
+                        </select>
+                        <input type="text" placeholder="Phân loại hình 26.01,26.18,..." class="boder-none mrg-left-8">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Hien-thi-chi-tiet-nhom" class="pointer">
+                        <label for="Hien-thi-chi-tiet-nhom" class="pointer">Hiển thị chi tiết nhóm</label>
+                    </div>
+                    <div>
+                        <a href="#" class="erase-btn">Xóa</a>
+                    </div>
+                </div>
+                <!-- Advanced Search Bar: End -->
+                <div class="search__decs mrg-top-16">
+                    <p>Dữ liệu cập nhật đến công báo 428 - ngày 25.12.2023.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-imformation">
+    <div class="product-table">
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>STT</th>
+                    <th>Mẫu Nhãn</th>
+                    <th>Nhãn Hiệu</th>
+                    <th>Nhóm</th>
+                    <th>Trạng Thái</th>
+                    <th>Ngày Nộp Đơn</th>
+                    <th>Số Đơn</th>
+                    <th>Chủ Đơn</th>
+                    <th>Đại diện SHCN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td><img src="http://wipopublish.ipvietnam.gov.vn/wopublish-search/service/trademarks/application/VN4202337127/thumbnail?noLogo=true&disclaimer=Combined" alt=""></td>
+                    <td>[níu: con bò]</td>
+                    <td>29</td>
+                    <td>Cấp bằng</td>
+                    <td>08.11.2021</td>
+                    <td>4-2021-43244</td>
+                    <td>Công ty TNHH chăn nuôi Việt Nhật</td>
+                    <td>Công ty Cổ phần Sở hữu công nghiệp INVESTIP</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="indemnity">
+    <a href="#" class="declare">Tuyên bố miễn trừ trách nhiệm</a>
+    <p class="contact mrg-top-8">© 2024 - IPSearch.vn - Email: contact@ipsearch.vn</p>
+</div>
+<script src="./assets/JS/script.js"></script>
+</body>
+</html>
