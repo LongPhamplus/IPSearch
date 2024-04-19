@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyIPSearch</title>
+    <link rel="stylesheet" href="/icons/themify-icons/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <base href="/">
+</head>
+<body>
+    <header>
+        {{> header}}
+    </header>
+    
+    <div class="container">
+        {{{body}}}
+        <div class="product-detail">
+            {{{productDetail}}}
+        </div>
+        <div class="product-imformation lh-2em">
+            <div class="product-table">
+                <div class="number-found">
+                    <p>Tìm thấy {{numFound}}{{subNumFound}} kết quả.</p>
+                </div>
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>STT</th>
+                            <th style="min-width: 200px;">Mẫu Nhãn</th>
+                            <th>Nhãn Hiệu</th>
+                            <th style="max-width: 80px;">Nhóm</th>
+                            <th>Trạng Thái</th>
+                            <th>Ngày Nộp Đơn</th>
+                            <th style="max-width: 80px;">Số Đơn</th>
+                            <th>Chủ Đơn</th>
+                            <th>Đại diện SHCN</th>
+                        </tr>
+                    </thead>
+                    <tbody id="search-data">
+                       {{{dataSearched}}}
+                       {{{don_cung_chu}}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        {{> footer}}
+    </footer>
+<script src="/js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="/css/mainpage.css" type="text/css">
+<body>
+    <div class="search container">
+        <div class="logo center-column">
+            <img class="logo__img" src="/image/logo-remove.png" >
+        </div>
+        <form method="post" action="/searchPage">
+        <div class="search-bar center-column">
+            <div class="search-bar-container">
+                <div class="search-bar--normal input mrg-top-16">
+                    <div class="search-bar--normal__inline">
+                        <input name="mo_ta_nhan_hieu" type="text" class="search-bar__input" placeholder="Nhập Số đơn hoặc Nhãn hiệu (kidd*, kidd?, ...)" >
+                        <button type="submit" id="submit-btn" class="ti-search pointer search-btn"></button>
+                    </div>
+                </div>
+                <div class="search-bar--advanced mrg-top-16 center-column">
+                    <div class="search-bar-advanced__btn">
+                        <a href="#" class="advanced-search__btn">Tìm kiếm nâng cao <i class="ti-angle-down"></i></a>
+                        <a href="#" class="save-list__btn">Danh sách đã lưu</a>
+                    </div>
+                    <!-- Advanced Search Bar: Begin -->
+                    
+                    <div class="advsearch-container grid-style grid-col-half close font-size-15">
+                        <div class="grid-style box1 grid-col-half">
+                            <div class="input sub-input id-company">
+                                <input name="so_bang" type="text" placeholder="Số bằng" class="boder-none">
+                            </div>
+                            <div class="input sub-input product-owner">
+                                <input type="text" placeholder="Chủ đơn" name="chu_don" class="boder-none">
+                            </div>
+                            <div class="input sub-input product-group flex-style">
+                                {{!-- name="product-filer" --}}
+                                <select  id="product-filer">
+                                    <option value="rand">Bất kỳ</option>
+                                    <option value="all">Tất cả</option>
+                                </select>
+                                <input name="nhom_san_pham" type="text" placeholder="Nhóm 1, 2, 3..." class="boder-none product-group-input">
+                            </div>
+                        </div>
+                        <div class="box2 input sub-input product-situation grid-style grid-col-half">
+                            <div style="grid-row: span 2; font-weight: bold; white-space: nowrap;">
+                                <label>Trạng thái</label>
+                            </div>
+                            <div class="center-row flex-align-left">
+                                <input name="cap-bang" type="checkbox" id="Cap-bang" class="pointer">
+                                <label for="Cap-bang" class="mrg-left-8 pointer">Cấp bằng</label>
+                            </div>
+                            <div class="center-row flex-align-left">
+                                <input name="dang-giai-quyet" type="checkbox" id="Dang-giai-quyet" class="pointer">
+                                <label for="Dang-giai-quyet" class="mrg-left-8 pointer">Đang giải quyết</label>
+                            </div>
+                            <div class="center-row flex-align-left">
+                                <input name="tu-choi" type="checkbox" id="Tu-choi" class="pointer">
+                                <label for="Tu-choi" class="mrg-left-8 pointer">Từ chối</label>
+                            </div>
+                            <div class="center-row flex-align-left">
+                                <input name="rut-don" type="checkbox" id="Rut-don" class="pointer">
+                                <label for="Rut-don" class="mrg-left-8 pointer">Rút đơn</label>
+                            </div>
+                        </div>
+                        <div class="box3 input sub-input product-name flex-style">
+                            <input name="san-pham" type="text" placeholder="Sản phẩm (cà ph*, cà ph?, ...)" class="boder-none">
+                        </div>
+                        <div class="box4 input sub-input product-classify flex-style">
+                            {{!-- name="phan-loai" --}}
+                            <select  id="phan-loai"> 
+                                <option value="rand">Tất cả</option>
+                                <option value="all">Bất kỳ</option>
+                            </select>
+                            <input name="phan_loai_hinh" type="text" placeholder="Phân loại hình 26.01,26.18,..." class="boder-none mrg-left-8">
+                        </div>
+                        <div>
+                            <input name="chi-tiet" type="checkbox" id="Hien-thi-chi-tiet-nhom" class="pointer">
+                            <label for="Hien-thi-chi-tiet-nhom" class="pointer">Hiển thị chi tiết nhóm</label>
+                        </div>
+                        <div>
+                            <a href="#" class="erase-btn">Xóa</a>
+                        </div>
+                    </div>
+            </div>
+                <!-- Advanced Search Bar: End -->
+            </div>
+        </form>
+
+        </div>
+    </div>
+</body>

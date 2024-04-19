@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "pg": "^8.11.3",
+    "sass": "^1.71.1"
+  },
+  "name": "searchip",
+  "version": "1.0.0",
+  "description": "ipsearch, js, nodejs",
+  "main": "src/main.js",
+  "devDependencies": {
+    "express": "^4.18.3",
+    "express-handlebars": "^7.1.2",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "moment": "^2.30.1",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0",
+    "pg-promise": "^11.5.4",
+    "prettier": "^3.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LongPhamplus/nodeJS_blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LongPhamplus/nodeJS_blog/issues"
+  },
+  "homepage": "https://github.com/LongPhamplus/nodeJS_blog#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/main.js",
+    "watch_main": "sass --embed-source-map --watch src/resources/scss/mainpage.scss src/public/css/mainpage.css",
+    "watch_sub": "sass --embed-source-map --watch src/resources/scss/subpage.scss src/public/css/subpage.css",
+    "watch_footer": "sass --embed-source-map --watch src/resources/scss/footer.scss src/public/css/footer.css"
+  },
+  "keywords": [
+    "ipsearch",
+    "js",
+    "nodejs"
+  ],
+  "author": "longpx",
+  "license": "ISC"
+}

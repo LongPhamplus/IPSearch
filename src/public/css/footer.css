@@ -1,0 +1,65 @@
+.close {
+  display: none !important;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-img {
+  margin: 10px auto;
+  height: 100px;
+  width: 200px;
+}
+
+.indemnity-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indemnity-box {
+  position: relative;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px 0;
+  display: flex;
+  background-color: white;
+  height: 80vh;
+  width: 60vw;
+  border: rgb(102, 102, 102) solid 3px;
+}
+
+.indemnity-content {
+  overflow: auto;
+  border-radius: 8px;
+  padding: 10px 0;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.indemnity-content .description {
+  margin: 15px 30px;
+}
+
+.fa-remove {
+  position: absolute;
+  font-size: 24px;
+  right: 9px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.fa-remove:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../../resources/scss/footer.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACI;;;AAEJ;EACG;;;AAEH;EACI;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI%22,%22file%22:%22footer.css%22%7D */
